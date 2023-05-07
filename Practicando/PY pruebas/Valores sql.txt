@@ -1,0 +1,29 @@
+Pasando los crear y actualizar tuve un problema con las sentencias, resulta que
+por algun motivo ahora no le justan los '?' para representar valores, sino que le gustan
+los '%s'
+
+esto lo resolvió el bot: GPT-3
+
+y aca hay una explicación de la diferencia:
+
+
+In an SQL statement, the ? character and the %s string are used as placeholders 
+for values that will be passed to the statement later. The difference between them 
+is in the way they are used and the type of data they can hold.
+
+The ? character is used as a placeholder in the pyodbc library for Python.
+ It is used to represent a parameter that will be passed to the execute() method 
+of the cursor object. The execute() method accepts a tuple or a list of values that 
+will be used to replace the ? placeholders in the SQL statement. The ? placeholder 
+can hold values of any type, such as strings, integers, or floating-point numbers.
+
+On the other hand, the %s string is used as a placeholder in the mysql-connector-python 
+library for Python. It is used to represent a string parameter that will be passed to 
+the execute() method of the cursor object. The execute() method accepts a tuple or 
+a list of values that will be used to replace the %s placeholders in the SQL statement.
+ The %s placeholder can only hold string values.
+
+In general, the ? placeholder is more flexible and can hold values of different types,
+ while the %s placeholder is limited to holding string values.
+
+I hope this helps! Let me know if you have any other questions.

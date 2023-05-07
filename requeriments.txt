@@ -1,0 +1,7 @@
+Package     Version
+----------- -------
+mi-paquete  0.1
+pip         22.3
+print-color 0.4.6
+pycodestyle 2.10.0
+setuptools  65.5.0

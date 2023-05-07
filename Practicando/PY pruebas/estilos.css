@@ -1,0 +1,55 @@
+div{
+    /*transform: translate(-50%, -50%);*/
+}
+
+
+
+/*============ Botón desplegable de usuario ==============*/
+.desplegableUsuario{
+    border: 2px solid transparent;
+    width: fit-content;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.desplegableUsuario > a{
+    color: yellowgreen;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: 1px solid yellowgreen;
+    outline-style: double;
+    border-radius: 5px;
+    
+}
+.menuUsuario{
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    margin-top: 1px;
+    min-width: 160px;
+
+}
+.desplegableUsuario:hover .menuUsuario{
+    display: block;
+}
+.menuUsuario ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+.desplegableUsuario .menuUsuario li a{
+    color: black;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.desplegableUsuario .menuUsuario li a:hover{
+    background-color: cornflowerblue;
+    color: aliceblue;
+}

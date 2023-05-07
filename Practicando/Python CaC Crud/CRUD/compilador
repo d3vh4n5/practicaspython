@@ -1,0 +1,8 @@
+'''
+Este sería el crud final al dia 15/12/2022
+Comando de creación en pip pyinstaller:
+pyinstaller --windowed --onefile --icon=".\IMG\hansicon.ico" CRUD3.py
+
+'''
+
+
